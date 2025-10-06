@@ -1,125 +1,168 @@
 /**
- * 整合版：Prism VS 主题 + Yun 主题适配（确保样式生效）
+ * VS theme by Andrew Lock (https://andrewlock.net)
+ * Inspired by Visual Studio syntax coloring
  */
-div.code-container {
-  margin: 1.5em 0 !important;
-  border-radius: 8px !important;
-  overflow: hidden !important;
-  box-shadow: 0 1px 2px rgba(0,0,0,0.05) !important;
-  position: relative !important;
+
+code[class*="language-"],
+pre[class*="language-"] {
+	color: #393A34;
+	font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace;
+	direction: ltr;
+	text-align: left;
+	white-space: pre;
+	word-spacing: normal;
+	word-break: normal;
+	font-size: .9em;
+	line-height: 1.2em;
+
+	-moz-tab-size: 4;
+	-o-tab-size: 4;
+	tab-size: 4;
+
+	-webkit-hyphens: none;
+	-moz-hyphens: none;
+	-ms-hyphens: none;
+	hyphens: none;
 }
 
-div.code-container code[class*="language-"],
-div.code-container pre[class*="language-"] {
-  color: #393A34 !important;
-  font-family: "Consolas", "Bitstream Vera Sans Mono", "Courier New", Courier, monospace !important;
-  direction: ltr !important;
-  text-align: left !important;
-  white-space: pre !important;
-  word-spacing: normal !important;
-  word-break: normal !important;
-  font-size: .9em !important;
-  line-height: 1.2em !important;
-  -moz-tab-size: 4 !important;
-  -o-tab-size: 4 !important;
-  tab-size: 4 !important;
-  -webkit-hyphens: none !important;
-  -moz-hyphens: none !important;
-  -ms-hyphens: none !important;
-  hyphens: none !important;
+pre > code[class*="language-"] {
+	font-size: 1em;
 }
 
-div.code-container pre > code[class*="language-"] {
-  font-size: 1em !important;
+pre[class*="language-"]::-moz-selection, pre[class*="language-"] ::-moz-selection,
+code[class*="language-"]::-moz-selection, code[class*="language-"] ::-moz-selection {
+	background: #C1DEF1;
 }
 
-/* 选中样式 */
-div.code-container pre[class*="language-"]::-moz-selection, 
-div.code-container pre[class*="language-"] ::-moz-selection,
-div.code-container code[class*="language-"]::-moz-selection, 
-div.code-container code[class*="language-"] ::-moz-selection {
-  background: #C1DEF1 !important;
+pre[class*="language-"]::selection, pre[class*="language-"] ::selection,
+code[class*="language-"]::selection, code[class*="language-"] ::selection {
+	background: #C1DEF1;
 }
 
-div.code-container pre[class*="language-"]::selection, 
-div.code-container pre[class*="language-"] ::selection,
-div.code-container code[class*="language-"]::selection, 
-div.code-container code[class*="language-"] ::selection {
-  background: #C1DEF1 !important;
+/* Code blocks */
+pre[class*="language-"] {
+	padding: 1em;
+	margin: .5em 0;
+	overflow: auto;
+	border: 1px solid #dddddd;
+	background-color: white;
 }
 
-/* 代码块样式 */
-div.code-container pre[class*="language-"] {
-  padding: 1.2em !important;
-  margin: 0 !important;
-  overflow: auto !important;
-  border: 1px solid #dddddd !important;
-  border-bottom: none !important;
-  background-color: white !important;
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: .2em;
+	padding-top: 1px;
+	padding-bottom: 1px;
+	background: #f8f8f8;
+	border: 1px solid #dddddd;
 }
 
-/* 行内代码样式 */
-div.code-container :not(pre) > code[class*="language-"] {
-  padding: .2em !important;
-  padding-top: 1px !important;
-  padding-bottom: 1px !important;
-  background: #f8f8f8 !important;
-  border: 1px solid #dddddd !important;
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+	color: #008000;
+	font-style: italic;
 }
 
-/* 注释样式（核心：绿色斜体） */
-div.code-container .token.comment,
-div.code-container .token.prolog,
-div.code-container .token.doctype,
-div.code-container .token.cdata {
-  color: #008000 !important;
-  font-style: italic !important;
+.token.namespace {
+	opacity: .7;
 }
 
-/* 其他语法高亮（确保覆盖） */
-div.code-container .token.namespace { opacity: .7 !important; }
-div.code-container .token.string { color: #A31515 !important; }
-div.code-container .token.punctuation, .token.operator { color: #393A34 !important; }
-div.code-container .token.url, .token.symbol, .token.number, .token.boolean, .token.variable, .token.constant, .token.inserted { color: #36acaa !important; }
-div.code-container .token.atrule, .token.keyword, .token.attr-value, .language-autohotkey .token.selector, .language-json .token.boolean, .language-json .token.number, code[class*="language-css"] { color: #0000ff !important; }
-div.code-container .token.function { color: #393A34 !important; }
-div.code-container .token.deleted, .language-autohotkey .token.tag { color: #9a050f !important; }
-div.code-container .token.selector, .language-autohotkey .token.keyword { color: #00009f !important; }
-div.code-container .token.important { color: #e90 !important; font-weight: bold !important; }
-div.code-container .token.bold { font-weight: bold !important; }
-div.code-container .token.italic { font-style: italic !important; }
-div.code-container .token.class-name, .language-json .token.property { color: #2B91AF !important; }
-div.code-container .token.tag, .token.selector { color: #800000 !important; }
-div.code-container .token.attr-name, .token.property, .token.regex, .token.entity { color: #ff0000 !important; }
-div.code-container .token.directive.tag .tag { background: #ffff00 !important; color: #393A34 !important; }
-
-/* 行号样式 */
-div.code-container .line-numbers.line-numbers .line-numbers-rows { border-right-color: #a5a5a5 !important; }
-div.code-container .line-numbers .line-numbers-rows > span:before { color: #2B91AF !important; padding-right: 0.8em !important; }
-
-/* 复制按钮样式 */
-div.code-container .copy-btn {
-  position: absolute !important;
-  top: 10px !important;
-  right: 10px !important;
-  background: #f5f5f5 !important;
-  border: 1px solid #ddd !important;
-  border-radius: 4px !important;
-  padding: 4px 8px !important;
-  cursor: pointer !important;
-  z-index: 10 !important;
+.token.string {
+	color: #A31515;
 }
-div.code-container .copy-btn:hover { background: #e9e9e9 !important; }
 
-/* 暗色模式适配 */
-@media (prefers-color-scheme: dark) {
-  div.code-container pre[class*="language-"],
-  div.code-container code[class*="language-"] {
-    background-color: #1e1e1e !important;
-    color: #dcdcdc !important;
-    border-color: #333 !important;
-  }
-  div.code-container .token.comment { color: #6A9955 !important; }
-  div.code-container .line-numbers.line-numbers .line-numbers-rows { border-right-color: #444 !important; }
-  div.code-container .copy-btn { background: #333 !important; border-color: #555 !important; }
+.token.punctuation,
+.token.operator {
+	color: #393A34; /* no highlight */
+}
+
+.token.url,
+.token.symbol,
+.token.number,
+.token.boolean,
+.token.variable,
+.token.constant,
+.token.inserted {
+	color: #36acaa;
+}
+
+.token.atrule,
+.token.keyword,
+.token.attr-value,
+.language-autohotkey .token.selector,
+.language-json .token.boolean,
+.language-json .token.number,
+code[class*="language-css"] {
+	color: #0000ff;
+}
+
+.token.function {
+	color: #393A34;
+}
+
+.token.deleted,
+.language-autohotkey .token.tag {
+	color: #9a050f;
+}
+
+.token.selector,
+.language-autohotkey .token.keyword {
+	color: #00009f;
+}
+
+.token.important {
+	color: #e90;
+}
+
+.token.important,
+.token.bold {
+	font-weight: bold;
+}
+
+.token.italic {
+	font-style: italic;
+}
+
+.token.class-name,
+.language-json .token.property {
+	color: #2B91AF;
+}
+
+.token.tag,
+.token.selector {
+	color: #800000;
+}
+
+.token.attr-name,
+.token.property,
+.token.regex,
+.token.entity {
+	color: #ff0000;
+}
+
+.token.directive.tag .tag {
+	background: #ffff00;
+	color: #393A34;
+}
+
+/* overrides color-values for the Line Numbers plugin
+ * http://prismjs.com/plugins/line-numbers/
+ */
+.line-numbers.line-numbers .line-numbers-rows {
+	border-right-color: #a5a5a5;
+}
+
+.line-numbers .line-numbers-rows > span:before {
+	color: #2B91AF;
+}
+
+/* overrides color-values for the Line Highlight plugin
+* http://prismjs.com/plugins/line-highlight/
+*/
+.line-highlight.line-highlight {
+	background: rgba(193, 222, 241, 0.2);
+	background: -webkit-linear-gradient(left, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
+	background: linear-gradient(to right, rgba(193, 222, 241, 0.2) 70%, rgba(221, 222, 241, 0));
 }
