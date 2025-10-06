@@ -143,7 +143,157 @@
   isHighlightShrink: false,
   isToc: false,
   pageType: 'page'
-}</script><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/prismjs/prism.css"><meta name="generator" content="Hexo 8.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/server/"><i class="fa-fw fas fa-server"></i><span> 服务</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://github.com/zyhqwq"><i class="fa-fw fab fa-github"></i><span> Github</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/images/6%E5%91%A8%E5%B9%B4.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo博客</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/server/"><i class="fa-fw fas fa-server"></i><span> 服务</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://github.com/zyhqwq"><i class="fa-fw fab fa-github"></i><span> Github</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">about</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h4 id="关于我？"><a href="#关于我？" class="headerlink" title="关于我？"></a>关于我？</h4><p>现在是一名高中生，可以叫我桦哲<br>为什么是这个名？因为名字带有拼音ZH（第一次网名叫Yalishidoorde，我觉得没什么特点就改了），我就反过来叫HZ<br>「桦」<br>指桦树，象征自然、坚韧与纯净。桦树在寒冷环境中生长，树皮质感独特，常被赋予生命力、高洁、诗意等意象，适合表达对自然的热爱或向往淡泊宁静的心境。<br>「哲」<br>意为智慧、理性、思想深度，源自“哲学”或“哲理”，暗示使用者注重思考、追求内在成长或知识探索。–From Deepseek<br>其实也是我在输入法里随便找的找的啦~</p>
+}</script><style>/* 随机一言内联样式 - 修正ID匹配 */
+#hitokoto-container,
+#site-info #hitokoto-container {
+  margin: 15px 0 !important;
+  text-align: center !important;
+  font-size: 18px !important;
+  color: #ffffff !important;
+  opacity: 0.95 !important;
+  transition: all 0.3s ease !important;
+  cursor: pointer !important;
+  padding: 12px 0 !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+  font-weight: 500 !important;
+  line-height: 1.6 !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  width: 100% !important;
+  position: relative !important;
+  min-height: 60px !important;
+}
+
+#hitokoto-container:hover,
+#site-info #hitokoto-container:hover {
+  opacity: 1 !important;
+  transform: translateY(-2px) !important;
+  text-shadow: 0 3px 6px rgba(0, 0, 0, 0.7) !important;
+}
+
+#hitokoto-text,
+#site-info #hitokoto-text {
+  font-style: italic !important;
+  display: block !important;
+  margin-bottom: 4px !important;
+  font-weight: 600 !important;
+  max-width: 90% !important;
+  text-align: center !important;
+  color: #ffffff !important;
+  font-size: 18px !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+  word-wrap: break-word !important;
+}
+
+#hitokoto-from,  /* 注意：这里使用 hitokoto-from */
+#site-info #hitokoto-from {
+  font-size: 14px !important;  /* 较小号字体 */
+  color: rgba(255, 255, 255, 0.85) !important;
+  display: block !important;
+  font-weight: 400 !important;
+  text-align: center !important;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.5) !important;
+  font-style: normal !important;
+  margin-top: 2px !important;  /* 在一言下方 */
+}
+
+#hitokoto-from:before,
+#site-info #hitokoto-from:before {
+  content: "—— " !important;
+}
+
+/* 如果没有内容，隐藏作者元素 */
+#hitokoto-from:empty,
+#site-info #hitokoto-from:empty {
+  display: none !important;
+}
+
+/* 固定位置悬浮提示 */
+#hitokoto-container::after,
+#site-info #hitokoto-container::after {
+  content: "点击刷新" !important;
+  position: absolute !important;
+  top: -35px !important;
+  left: 50% !important;
+  transform: translateX(-50%) translateY(10px) !important;
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(0, 0, 0, 0.8) !important;
+  padding: 6px 12px !important;
+  border-radius: 12px !important;
+  white-space: nowrap !important;
+  z-index: 1000 !important;
+  backdrop-filter: blur(5px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.2) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3) !important;
+  opacity: 0 !important;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  pointer-events: none !important;
+  transition-delay: 0s !important;
+}
+
+#hitokoto-container:hover::after,
+#site-info #hitokoto-container:hover::after {
+  opacity: 1 !important;
+  transform: translateX(-50%) translateY(0) !important;
+  transition-delay: 0.3s !important;
+}
+
+/* 添加小箭头指向一言内容 */
+#hitokoto-container::before,
+#site-info #hitokoto-container::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -12px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+  border: 5px solid transparent !important;
+  border-top-color: rgba(0, 0, 0, 0.8) !important;
+  z-index: 1001 !important;
+  opacity: 0 !important;
+  transition: opacity 0.3s ease !important;
+  transition-delay: 0s !important;
+  pointer-events: none !important;
+}
+
+#hitokoto-container:hover::before,
+#site-info #hitokoto-container:hover::before {
+  opacity: 1 !important;
+  transition-delay: 0.3s !important;
+}
+</style><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@900&display=swap" rel="stylesheet"><link rel="stylesheet" href="/prismjs/prism.css"><style>
+  /* 随机图片组件样式 */
+  .random-image-widget .item-content {
+    padding: 10px;
+  }
+  .random-image-container {
+    text-align: center;
+  }
+  .random-img {
+    max-width: 100%;  /* 限制图片宽度为侧边栏宽度 */
+    height: auto;     /* 保持图片比例 */
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  .refresh-btn {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #f5f5f5;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+  }
+  .refresh-btn:hover {
+    background: #eaeaea;
+  }
+</style>
+<meta name="generator" content="Hexo 8.0.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/images/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/server/"><i class="fa-fw fas fa-server"></i><span> 服务</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://github.com/zyhqwq"><i class="fa-fw fab fa-github"></i><span> Github</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="not-home-page" id="page-header" style="background-image: url(/images/6%E5%91%A8%E5%B9%B4.jpg);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Hexo博客</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 归档</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/server/"><i class="fa-fw fas fa-server"></i><span> 服务</span></a></div><div class="menus_item"><a class="site-page" target="_blank" rel="noopener" href="https://github.com/zyhqwq"><i class="fa-fw fab fa-github"></i><span> Github</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="page-site-info"><h1 id="site-title">about</h1></div></header><main class="layout" id="content-inner"><div id="page"><div class="container" id="article-container"><h4 id="关于我？"><a href="#关于我？" class="headerlink" title="关于我？"></a>关于我？</h4><p>现在是一名高中生，可以叫我桦哲<br>为什么是这个名？因为名字带有拼音ZH（第一次网名叫Yalishidoorde，我觉得没什么特点就改了），我就反过来叫HZ<br>「桦」<br>指桦树，象征自然、坚韧与纯净。桦树在寒冷环境中生长，树皮质感独特，常被赋予生命力、高洁、诗意等意象，适合表达对自然的热爱或向往淡泊宁静的心境。<br>「哲」<br>意为智慧、理性、思想深度，源自“哲学”或“哲理”，暗示使用者注重思考、追求内在成长或知识探索。–From Deepseek<br>其实也是我在输入法里随便找的找的啦~</p>
 <h4 id="爱好？"><a href="#爱好？" class="headerlink" title="爱好？"></a>爱好？</h4><p>爱好嘛游戏主玩崩铁，明日方舟，自学计算机相关，写过Bash脚本（皮毛），正在利用课余时间学习Python，怪不得说Python是最接近自然语言的编程语言呢，真的很好上手~</p>
 <p>现在周末维护自己网站（尽量不那么臃肿），像暑假寒假这种时间更多的再部署一些好玩的项目<br>对了，我还玩过TRSS-Yunzai，而且还写过教程在hexo博客里，Typecho（寄了）也有</p>
 <h4 id="故事？"><a href="#故事？" class="headerlink" title="故事？"></a>故事？</h4><p>哦对，随身WiFi刷debian11（后面已经升级为debian12了），搭建网站还行，拿来开我的世界？嗯…实践之后发现不行<br>ARM系统折腾我的世界确实有点麻烦，主要是随身WiFi存储空间太憋屈了，真的，3GB存储！不是运行内存哦！<br>所以嘛，原来有个网站是使用机顶盒刷机的，随身WiFi只是测试用的，这些玩坏了系统重刷就好了，主要还是想拥有更大的存储空间嘛<br>之前我的网站已经停过好几次了，有时是网站源码没备份…有时是没资金…现在网站完全掌握在我手里，哈哈哈，哈,咳咳咳<br>我很喜欢自己鼓捣这些，别人不怎么懂，所以几乎没什么话题表情</p>
@@ -152,8 +302,8 @@
 <p>在生活的起伏中，总有小确幸如星光点亮前路；<br>在学习的探索里，常有灵光一闪的顿悟与收获的喜悦；<br>即使偶遇风雨，也能心怀阳光，把挑战化为成长的阶梯；<br>更重要的是——你的努力会像种子，终将在对的时机开花结果。<br>「好运」或许无法被预言，但可以主动创造：</p>
 <p>保持好奇与开放：机遇常藏在未曾预料的地方；<br>认真对待小事：把每一天的积累变成未来的底气；<br>善待自己与他人：温柔的能量会像回力镖般归来。<br>送你一句悄悄话：<br>“所谓幸运，不过是坚持与善意共振的回声。”<br>（记得每天对自己说一句：我值得一切美好 ❤️）</p>
 <p>一路向前，但行好事，剩下的交给时间——<br>祝你成为自己的锦鲤！ 🌟</p>
-<h4 id="想联系我？"><a href="#想联系我？" class="headerlink" title="想联系我？"></a>想联系我？</h4><p>邮箱：<a href="mailto:&#x7a;&#x79;&#104;&#103;&#97;&#x6d;&#x65;&#115;&#64;&#111;&#x75;&#116;&#x6c;&#x6f;&#111;&#x6b;&#x2e;&#99;&#111;&#109;">zyhgames@outlook.com</a></p>
-</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">zyhqwq</div><div class="author-info-description">永远相信美好的事情即将发生</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zyhqwq"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://space.bilibili.com/536395686" target="_blank" title="B站"><i class="fas fa-bilibili" style="color: #FF8EB3;"></i></a><a class="social-icon" href="https://github.com/zyhqwq" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #000000;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Thanks for watching my blog.</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/06/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%B5%8B%E8%AF%95/" title="代码高亮测试">代码高亮测试</a><time datetime="2025-10-06T08:57:06.000Z" title="发表于 2025-10-06 16:57:06">2025-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/12/%E9%83%A8%E7%BD%B2TRSS-Yunzai%E4%BA%91%E5%B4%BDQQNT%E6%95%99%E7%A8%8B/" title="部署TRSS-Yunzai云崽QQNT教程">部署TRSS-Yunzai云崽QQNT教程</a><time datetime="2024-08-12T04:06:28.000Z" title="发表于 2024-08-12 12:06:28">2024-08-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/24/%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E7%BB%8F%E5%8E%86%E6%95%99%E7%A8%8B/" title="部署hexo的经历和教程">部署hexo的经历和教程</a><time datetime="2024-07-24T13:05:10.000Z" title="发表于 2024-07-24 21:05:10">2024-07-24</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.15em; color: rgb(181, 187, 196);">教程</a><a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 1.15em; color: rgb(136, 112, 144);">记录</a></div></div><div class="card-widget card-archives">
+<h4 id="想联系我？"><a href="#想联系我？" class="headerlink" title="想联系我？"></a>想联系我？</h4><p>邮箱：<a href="mailto:&#x7a;&#121;&#x68;&#103;&#x61;&#109;&#x65;&#x73;&#64;&#x6f;&#117;&#116;&#108;&#x6f;&#x6f;&#107;&#46;&#99;&#111;&#109;">zyhgames@outlook.com</a></p>
+</div><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div id="waline-wrap"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/images/%E5%A4%B4%E5%83%8F.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">zyhqwq</div><div class="author-info-description">永远相信美好的事情即将发生</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">3</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">2</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/zyhqwq"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://space.bilibili.com/536395686" target="_blank" title="B站"><i class="fas fa-bilibili" style="color: #FF8EB3;"></i></a><a class="social-icon" href="https://github.com/zyhqwq" target="_blank" title="GitHub"><i class="fab fa-github" style="color: #000000;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">Thanks for watching my blog.</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2025/10/06/%E4%BB%A3%E7%A0%81%E9%AB%98%E4%BA%AE%E6%B5%8B%E8%AF%95/" title="代码高亮测试">代码高亮测试</a><time datetime="2025-10-06T08:57:06.000Z" title="发表于 2025-10-06 16:57:06">2025-10-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/08/12/%E9%83%A8%E7%BD%B2TRSS-Yunzai%E4%BA%91%E5%B4%BDQQNT%E6%95%99%E7%A8%8B/" title="部署TRSS-Yunzai云崽QQNT教程">部署TRSS-Yunzai云崽QQNT教程</a><time datetime="2024-08-12T04:06:28.000Z" title="发表于 2024-08-12 12:06:28">2024-08-12</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/07/24/%E9%83%A8%E7%BD%B2hexo%E7%9A%84%E7%BB%8F%E5%8E%86%E6%95%99%E7%A8%8B/" title="部署hexo的经历和教程">部署hexo的经历和教程</a><time datetime="2024-07-24T13:05:10.000Z" title="发表于 2024-07-24 21:05:10">2024-07-24</time></div></div></div></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/%E6%95%99%E7%A8%8B/" style="font-size: 1.15em; color: rgb(113, 86, 89);">教程</a><a href="/tags/%E8%AE%B0%E5%BD%95/" style="font-size: 1.15em; color: rgb(123, 165, 50);">记录</a></div></div><div class="card-widget card-archives">
     <div class="item-headline">
       <i class="fas fa-archive"></i>
       <span>归档</span>
@@ -190,7 +340,13 @@
         </li>
       
     </ul>
-  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-10-06T09:20:51.998Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By zyhqwq</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div><div class="footer_custom_text">本博客已努力地运行 <span id='runtime_span'></span> (●'◡'●)</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"><script>(() => {
+  </div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站信息</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">3</div></div><div class="webinfo-item"><div class="item-name">本站总字数 :</div><div class="item-count">2.6k</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">本站总浏览量 :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2025-10-06T14:34:28.759Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div><div class="card-widget random-image-widget" id="random-image" style="order: 1"><div class="item-headline"><i class="fas fa-image"></i><span>随机图片</span></div><div class="item-content"><div class="random-image-container">
+  <img src="https://img-api.zyhmifan.dpdns.org" alt="随机图片" class="random-img">
+  <button class="refresh-btn" onclick="this.previousElementSibling.src='https://img-api.zyhmifan.dpdns.org?'+Math.random()">
+    <i class="fas fa-sync-alt"></i> 换一张
+  </button>
+</div>
+</div></div></div></div></main><footer id="footer"><div class="footer-other"><div class="footer-copyright"><span class="copyright">&copy;&nbsp;2025 By zyhqwq</span><span class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo 8.0.0</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly 5.5.1</a></span></div><div class="footer_custom_text">本博客已努力地运行 <span id='runtime_span'></span> (●'◡'●)</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=5.5.1"></script><script src="/js/main.js?v=5.5.1"></script><div class="js-pjax"><script>(() => {
   let initFn = window.walineFn || null
   const isShuoshuo = GLOBAL_CONFIG_SITE.pageType === 'shuoshuo'
   const option = null
@@ -258,5 +414,84 @@ function show_runtime() {
     document.getElementById("runtime_span").innerHTML = days + "天" + hours + "时" + minutes + "分" + seconds + "秒";
 }
 show_runtime();
+</script>
+<script>
+// 随机一言功能 - 修正ID匹配
+function fetchHitokoto() {
+    console.log('开始获取一言...');
+    
+    const hitokotoText = document.getElementById('hitokoto-text');
+    const hitokotoFrom = document.getElementById('hitokoto-from'); // 注意：这里使用 hitokoto-from
+    
+    // 显示加载状态
+    if (hitokotoText) {
+      hitokotoText.textContent = '加载中...';
+    }
+    if (hitokotoFrom) {
+      hitokotoFrom.textContent = '';
+    }
+    
+    // 使用专用API
+    fetch('https://yiyan.zyhh.qzz.io/?format=json')
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('网络响应不正常');
+        }
+        return response.json();
+      })
+      .then(data => {
+        console.log('API返回数据:', data);
+        
+        // 处理内容
+        if (hitokotoText && data.content) {
+          hitokotoText.textContent = data.content;
+          console.log('设置内容:', data.content);
+        }
+        
+        // 处理作者信息 - 使用 hitokoto-from 元素
+        if (hitokotoFrom) {
+          if (data.author && data.author.trim() !== '') {
+            // 显示作者
+            hitokotoFrom.textContent = data.author;
+            console.log('设置作者:', data.author);
+          } else if (data.tags && data.tags.length > 0) {
+            // 如果没有作者，显示第一个标签
+            hitokotoFrom.textContent = data.tags[0];
+          } else {
+            // 如果都没有，隐藏作者元素
+            hitokotoFrom.style.display = 'none';
+          }
+        }
+      })
+      .catch(error => {
+        console.error('获取一言失败:', error);
+        // 失败时显示默认文案
+        if (hitokotoText) {
+          hitokotoText.textContent = '生活不止眼前的苟且，还有诗和远方。';
+        }
+        if (hitokotoFrom) {
+          hitokotoFrom.textContent = '高晓松';
+        }
+      });
+}
+
+// 页面加载时初始化
+document.addEventListener('DOMContentLoaded', function() {
+    console.log('DOM加载完成，初始化一言...');
+    
+    // 延迟一点执行，确保DOM完全加载
+    setTimeout(() => {
+      fetchHitokoto();
+      
+      const container = document.getElementById('hitokoto-container');
+      if (container) {
+          console.log('找到一言容器');
+          // 点击刷新
+          container.addEventListener('click', fetchHitokoto);
+      } else {
+        console.error('找不到 hitokoto-container 元素');
+      }
+    }, 100);
+});
 </script>
 <canvas class="fireworks" mobile="false"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.6/dist/fireworks.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><i class="fas fa-spinner fa-pulse" id="loading-status" hidden="hidden"></i><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="local-search-input"><input placeholder="搜索文章" type="text"/></div><hr/><div id="local-search-results"></div><div class="ais-Pagination" id="local-search-pagination" style="display:none;"><ul class="ais-Pagination-list"></ul></div><div id="local-search-stats"></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=5.5.1"></script></div></div></body></html>
