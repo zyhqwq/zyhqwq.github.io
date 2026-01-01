@@ -1741,7 +1741,7 @@ body {
   background: var(--global-bg);
   color: var(--font-color);
   font-size: var(--global-font-size);
-  font-family: 'LXGW WenKai', 'PingFang SC', 'Microsoft YaHei', serif;
+  font-family: 'LXGW WenKai', 'Source Han Serif SC','PingFang SC', 'Microsoft YaHei', serif;
   line-height: 2;
   -webkit-tap-highlight-color: rgba(0,0,0,0);
   scroll-behavior: smooth;
@@ -1981,7 +1981,7 @@ blockquote > :last-child {
 .container pre,
 .container code {
   font-size: var(--global-font-size);
-  font-family: 'LXGW WenKai Mono', 'JetBrains Mono', Consolas, monospace !important;
+  font-family: 'Source Han Serif SC','LXGW WenKai Mono', 'JetBrains Mono', Consolas, monospace !important;
   border-radius: 6px;
 }
 .container code {
