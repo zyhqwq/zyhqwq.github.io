@@ -1625,7 +1625,7 @@ canvas:not(#ribbon-canvas),
   }
 }
 :root {
-  --global-font-size: 18px;
+  --global-font-size: 14px;
   --global-bg: #fff;
   --font-color: #4c4948;
   --hr-border: #a4d8fa;
@@ -1969,7 +1969,7 @@ blockquote > :last-child {
 }
 .container pre,
 .container code {
-  font-size: 16px;
+  font-size: var(--global-font-size);
   font-family: 'LXGW WenKai Mono', 'JetBrains Mono', Consolas, monospace !important;
   border-radius: 6px;
 }
@@ -1999,7 +1999,7 @@ blockquote > :last-child {
 .container figure.highlight figcaption,
 .container figure.highlight .caption {
   padding: 6px 0 2px 14px;
-  font-size: 16px;
+  font-size: var(--global-font-size);
   line-height: 1em;
 }
 .container figure.highlight figcaption a,
@@ -2044,7 +2044,7 @@ blockquote > :last-child {
   height: 2.15em;
   background: var(--hltools-bg);
   color: var(--hltools-color);
-  font-size: 16px;
+  font-size: var(--global-font-size);
   overflow: hidden;
 }
 .container .highlight-tools > * {
