@@ -1,1 +1,19 @@
-[{"url":"https://zyhqwq.github.io/","avatar":"/images/头像.jpg","name":"桦哲","blog":"桦哲的博客","desc":"分享技术与生活","color":"#6a984b","email":"zyhgames@outlook.com"}]
+[
+  {
+    "url": "https://zyhqwq.github.io/",
+    "avatar": "/images/头像.jpg",
+    "name": "桦哲",
+    "blog": "桦哲的博客",
+    "desc": "分享技术与生活",
+    "color": "#6a984b",
+    "email": "zyhgames@outlook.com"
+  },
+  {
+    "url": "https://zyhqwq.github.io/My-wallpaper-page/",
+    "avatar": "https://zyhqwq.github.io/My-wallpaper-page/images/thumb/photo1.webp",
+    "name": "壁纸与美图",
+    "blog": "壁纸与美图",
+    "desc": "森空岛与明日方舟·终末地官方主题画廊的高清壁纸合集",
+    "color": "#1f6feb"
+  }
+]
